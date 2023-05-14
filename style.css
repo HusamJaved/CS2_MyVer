@@ -1,0 +1,938 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Jost', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+.navbar .nav-logo{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+.navbar .nav-logo img{
+    width: 500px;
+}
+.navbar .nav-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.navbar .nav-list ul li{
+    list-style: none;
+    width: auto;
+}
+.navbar .nav-list ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar .nav-list li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.navbar .nav-btn button{
+    background-color: rgb(0, 18, 66);
+    border: 2px solid black;
+    padding: 15px;
+    width:auto;
+    height: auto;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.navbar .nav-btn button a{
+    color: white;
+    text-decoration: none;
+}
+.navbar .nav-btn button:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+.banner1-bg{
+    background-image: url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/header_bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0px;
+}
+.banner1{
+    background-image: linear-gradient(to right,rgb(2, 2, 66),rgb(1, 33, 102),rgb(255, 102, 0), rgb(255, 102, 0));
+    color: white;
+    border-radius: 15px;
+    margin: 100px 200px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    animation-name: a;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    position: relative;
+}
+.banner1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+@keyframes a{
+    from{margin-left:-2048px;margin-right: 2048px;}
+    to{margin-left:  200px;}
+}
+.banner1 .box1{
+    background-color: transparent;
+    padding: 25px 20px;
+}
+.banner1 .box1 .box1-btns{
+    background-color:transparent;
+    display: flex;
+    gap: 15px;
+}
+.banner1 .box1 h2{
+    background-color:transparent;
+    width: auto;
+    font-size: 40px;
+}
+.banner1 .box1 p{
+    background-color: transparent;
+    width: auto;
+    margin: 20px 0px;
+    text-align: justify;
+}
+.banner1 .box1 button{
+    color: white;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+}
+.banner1 .box1 button a{
+    color:white;
+    text-decoration: none;
+    padding: 5px;
+}
+.banner1 .box1 a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.banner1 .box2 img{
+    display: flex;
+    background-color: transparent;
+    width: 600px;
+}
+.banner2-bg{
+    background-image: url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgDarkBlue.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0px;
+}
+.banner2{
+    background-color: white;
+    padding: 50px 50px;
+    margin: 100px 200px;
+    border-radius: 15px;
+    animation: 0.5s b;
+    animation-iteration-count: 1;
+    width: auto;
+    height: auto;
+}
+.banner2 .heading h1{
+    display: flex;
+    justify-items: left;
+    width: auto;
+}
+.banner2 .heading p{
+    font-size: 28px;
+    display: flex;
+    justify-content: left;
+    width: auto;
+    text-align: justify;
+    position: relative;
+}
+.banner2:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+@keyframes b{
+    from{margin-left:2048px;margin-right: -2048px;}
+    to{margin-left:  200px;}
+}
+.banner2 h1{
+    font-size: 68px;
+    display: flex;
+    justify-items: left;
+    align-items: center;
+    position: relative;
+    width: auto;
+}
+.banner2 .box p{
+    position: relative;
+    text-align: justify;
+    width:auto;
+    margin-top: 5px;
+}
+.banner2 .box{
+    padding: 20px;
+}
+.banner2 .box h5{
+    font-size: 40px;
+}
+.banner2 .box p{
+    font-size: 28px;
+    width: auto;
+}
+.banner3-bg{
+    background-image: url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgOrange.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0px;
+}
+.banner3{
+    background-color: #ff9b01;
+    border-radius: 15px;
+    height: auto;
+    width: auto;
+    padding: 50px 50px;
+    margin: 100px 200px;
+    animation: 0.5s c;
+    animation-iteration-count: 1;
+}
+@keyframes c{
+    from{margin-left:-2048px;margin-right: 2048px;}
+    to{margin-left:  200px;}
+}
+.banner3:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.banner3::cue-region{
+    transition:ease-in-out;
+}
+.banner3 h1{
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 25px;
+    width: auto;
+}
+.banner3 h6{
+    font-size: 36px;
+    width: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+.banner3 p{
+    width: auto;
+    font-size: 30px;
+    margin: 15px 45px;
+    position: relative;
+    text-align: justify;
+}
+.banner4-bg{
+    background-image: url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgGray.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 50px;
+    display: flex;
+    justify-content: center;
+}
+.banner4{
+    background-color: white;
+    padding: 50px 50px;
+    margin: 100px 200px;
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    animation: 0.5s d;
+    animation-iteration-count: 1;
+}
+@keyframes d{
+    from{margin-left:2048px;margin-right: -2048px;}
+    to{margin-left:  200px;}
+}
+.banner4:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.banner4 h1{
+    font-size: 62px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.banner4 p{
+    font-size: 28px;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    position: relative;
+}
+footer{
+    padding: 10px 0px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    width: auto;
+    height: auto;
+}
+
+/* FOR Phones */
+@media only screen and (max-width:480px){
+    .navbar{
+        display: block;
+    }
+    .navbar .nav-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .nav-logo img{
+        width: 300px;
+    }
+    .navbar .nav-list ul{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .navbar .nav-list ul li{
+        text-align: center;
+        margin: 10px 0px;
+        line-height: 45px;
+        list-style: none;
+        width: auto;
+    }
+    .navbar .nav-list ul li a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .navbar .nav-list li:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .navbar .nav-btn{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .nav-btn button{
+        background-color: rgb(0, 18, 66);
+        border: 2px solid black;
+        padding: 15px;
+        width:auto;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .navbar .nav-btn button a{
+        color: white;
+        text-decoration: none;
+    }
+    .navbar .nav-btn button:hover{
+        transform: scale(1.05);
+        transition: 0.1s;
+    }
+    .banner1-bg{
+        background-image: url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/header_bg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px 0px;
+    }
+    .banner1{
+        background-color: white;
+        color: white;
+        border-radius: 15px;
+        margin: 100px 25px;
+        height: auto;
+        width:auto;
+        animation-name: a;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        position: relative;
+    }
+    .banner1:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner1 .box1{
+        background-color: transparent;
+        padding: 25px 20px;
+    }
+    .banner1 .box1 .box1-btns{
+        background-color:transparent;
+        display: flex;
+        gap: 15px;
+    }
+    .banner1 .box1 h2{
+        background-color:transparent;
+        width: auto;
+        font-size: 40px;
+    }
+    .banner1 .box1 p{
+        background-color: transparent;
+        width: auto;
+        margin: 20px 0px;
+        text-align: justify;
+    }
+    .banner1 .box1 button{
+        color: white;
+        padding: 8px;
+        border: none;
+        background-color: transparent;
+    }
+    .banner1 .box1 button a{
+        color:white;
+        text-decoration: none;
+        padding: 5px;
+    }
+    .banner1 .box1 a:hover{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .banner1 .box2 img{
+        display: flex;
+        background-color: transparent;
+        width: 0px;
+    }
+    .banner2-bg{
+        background-image: url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgDarkBlue.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px 0px;
+    }
+    .banner2{
+        background-color: white;
+        padding: 50px 50px;
+        margin: 100px 25px;
+        border-radius: 15px;
+        animation: 0.5s b;
+        animation-iteration-count: 1;
+        width: auto;
+        height: auto;
+    }
+    .banner2 .heading h1{
+        font-size: 28px;
+        display: flex;
+        justify-items: left;
+        align-items: center;
+        position: relative;
+        width: auto;
+    }
+    .banner2 .heading p{
+        font-size: 18px;
+        display: flex;
+        justify-content: left;
+        width: auto;
+        text-align: justify;
+        position: relative;
+    }
+    .banner2:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner2 .box p{
+        position: relative;
+        text-align: justify;
+        width:auto;
+        margin-top: 5px;
+    }
+    .banner2 .box{
+        padding: 10px 0px;
+    }
+    .banner2 .box h5{
+        font-size: 25px;
+    }
+    .banner2 .box p{
+        font-size: 16px;
+        width: auto;
+    }
+    .banner3-bg{
+        background-image: url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgOrange.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px 0px;
+    }
+    .banner3{
+        background-color: #ff9b01;
+        border-radius: 15px;
+        height: auto;
+        width: auto;
+        padding: 50px 25px;
+        margin: 100px 25px;
+        animation: 0.5s c;
+        animation-iteration-count: 1;
+    }
+    .banner3:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner3::cue-region{
+        transition:ease-in-out;
+    }
+    .banner3 h1{
+        font-size: 52px;
+        text-align: center;
+        margin-bottom: 25px;
+        width: auto;
+    }
+    .banner3 h6{
+        font-size: 29px;
+        width: auto;
+        text-align: justify;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .banner3 p{
+        width: auto;
+        font-size: 20px;
+        margin: 15px 5px;
+        position: relative;
+        text-align: justify;
+    }
+    .banner4-bg{
+        background-image: url(https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/bgGray.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 80px 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner4{
+        background-color: white;
+        padding: 50px 25px;
+        margin: 100px 25px;
+        height: auto;
+        width: auto;
+        border-radius: 15px;
+        animation: 0.5s d;
+        animation-iteration-count: 1;
+    }
+    .banner4:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner4 h1{
+        font-size: 62px;
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .banner4 p{
+        font-size: 20px;
+        width: auto;
+        height: auto;
+        text-align: justify;
+        padding: 15px;
+        position: relative;
+    }
+    footer{
+        padding: 10px 0px;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 15px;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* FOR Tablets */
+@media only screen and (max-width: 992px) and (min-width:720px){
+    .navbar{
+        display: block;
+    }
+    .navbar .nav-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .nav-logo img{
+        height: 66px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .navbar .nav-list{
+        display: flex;
+        margin: 10px 0px;
+        justify-content: center;
+    }
+    .navbar .nav-list ul li{
+        margin: 20px 0px;
+    }
+    .navbar .nav-list ul li:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .navbar .nav-btn {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .nav-btn button{
+        padding: 15px;
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .navbar .nav-btn button:hover{
+        transform: scale(1.05);
+        transition: 0.1s;
+    }
+    .banner1{
+        margin: 100px 25px;
+        display: flex;
+        height: auto;
+        animation-name: a;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        width:auto;
+    }
+    .banner1:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner1 .box1{
+        padding: 25px 20px;
+        text-align: justify;
+    }
+    .banner1 .box1 .box1-btns{
+        display: flex;
+        gap: 1px;
+    }
+    .banner1 .box1 h2{
+        position: relative;
+        width: auto;
+        font-size: 57px;
+    }
+    .banner1 .box1 p{
+        position: relative;
+        width:auto;
+        margin: 10px 0px;
+        font-size: 21px;
+    }
+    .banner1 .box1 button{
+        padding: 8px;
+        position: relative;
+    }
+    .banner1 .box1 button a{
+        padding: 7px;
+        width: auto;
+    }
+    .banner1 .box1 a:hover{
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .banner1 .box2 img{
+        width: 0px;
+    }
+    .banner2{
+        margin: 100px 25px;
+        animation: 0.5s b;
+        animation-iteration-count: 1;
+        width: auto;
+        height: auto;
+        position: relative;
+    }
+    .banner2 .heading h1{
+        display: block;
+        width: auto;
+    }
+    .banner2 .heading p{
+        font-size: 30px;
+        width: auto;
+    }
+    .banner2:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner2 h1{
+        font-size: 66px;
+        display: block;
+        width: auto;
+    }
+    .banner2 .box{
+        padding: 20px 0px;
+    }
+    .banner2 .box p{
+        text-align: justify;
+        width: auto;
+    }
+    .banner2 .box h5{
+        font-size: 40px;
+        width: auto;
+    }
+    .banner2 .box p{
+        font-size: 25px;
+        width: auto;
+    }
+    .banner3{
+        margin: 100px 25px;
+        animation: 0.5s c;
+        animation-iteration-count: 1;
+        width: auto;
+        height: auto;
+    }
+    .banner3:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner3 h1{
+        font-size: 56px;
+        text-align: center;
+        margin-bottom: 25px;
+        height: auto;
+        width: auto;
+    }
+    .banner3 h6{
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+        height: auto;
+        width: auto;
+    }
+    .banner3 p{
+        font-size: 25px;
+        text-align: justify;
+        height: auto;
+        margin: 15px 5px;
+        width: auto;
+    }
+    .banner4{
+        margin: 100px 25px;
+        animation: 0.5s d;
+        animation-iteration-count: 1;
+        width:auto;
+    }
+    .banner4:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner4 h1{
+        font-size: 76px;
+        text-align: center;
+        margin-bottom: 20px;
+        width: auto;
+    }
+    .banner4 p{
+        font-size: 28px;
+        padding: 10px 0px;
+        width: auto;
+        text-align: justify;
+    }
+    footer{
+        padding: 10px 5px;
+        text-align: center;
+        font-size: 15px;
+        width: auto; 
+    }
+}
+
+/* FOR Laptops */
+@media only screen and (max-width: 1024px) and (min-width:992px){
+    .navbar .nav-logo{
+        display: block
+    }
+    .navbar .nav-logo img{
+        width: 350px;
+        display: flex;
+        align-items: center;
+    }
+    .navbar .nav-list{
+        margin: 10px 0px;
+    }
+    .navbar .nav-list ul{
+        display: flex;
+        gap: 25px;
+    }
+    .navbar .nav-list ul li{
+        text-align: center;
+        margin: 20px 0px;
+    }
+    .navbar .nav-list ul li a{
+        font-size: 13px;
+    }
+    .navbar .nav-list li:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .navbar .nav-btn button{
+        padding: 15px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-left: -15px;
+    }
+    .navbar .nav-btn button:hover{
+        transform: scale(1.05);
+        transition: 0.1s;
+    }
+    .banner1{
+        margin: 40px 80px;
+        display: flex;
+        height: auto;
+        width: auto;
+        animation-name: a;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+    }
+    .banner1:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner1 .box1{
+        text-align: justify;
+    }
+    .banner1 .box1 .box1-btns{
+        display: flex;
+        gap: 1px;
+    }
+    .banner1 .box1 h2{
+        position: relative;
+        width:auto;
+        font-size: 25px;
+    }
+    .banner1 .box1 p{
+        position: relative;
+        width:auto;
+        margin: 10px 0px;
+        font-size: 12px;
+    }
+    .banner1 .box1 button{
+        padding: 8px;
+        position: relative;
+    }
+    .banner1 .box1 button a{
+        padding: 7px;
+        width: auto;
+    }
+    .banner1 .box1 a:hover{
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .banner1 .box2{
+        background: transparent;
+    }
+    .banner1 .box2 img{
+        width: 440px;
+        height: 390px;
+    }
+    .banner2{
+        margin: 40px 80px;
+        animation: 0.5s b;
+        animation-iteration-count: 1;
+        width: auto;
+        position: relative;
+    }
+    .banner2 .heading h1{
+        font-size: 50px;
+        width: auto;
+    }
+    .banner2 .heading p{
+        font-size: 30px;
+        width: auto;
+    }
+    .banner2:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner2 .box p{
+        text-align: justify;
+        width: auto;
+    }
+    .banner2-bg .banner2 .box{
+        padding: 20px 0px;
+    }
+    .banner2-bg .banner2 .box h5{
+        font-size: 30px;
+        width: auto;
+        padding: 5px 0px;
+    }
+    .banner2-bg .banner2 .box p{
+        font-size: 22px;
+        text-align: justify;
+        width: auto;
+    }
+    .banner3{
+        margin: 40px 80px;
+        animation: 0.5s c;
+        animation-iteration-count: 1;
+        width: auto;
+        height: auto;
+    }
+    .banner3:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner3 h1{
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 25px;
+        height: auto;
+        width: auto;
+    }
+    .banner3 h6{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 20px;
+        height: auto;
+        width: auto;
+    }
+    .banner3 p{
+        width: auto;
+        font-size: 20px;
+        margin: 0px 15px;
+        text-align: justify;
+        height: auto;
+    }
+    .banner4{
+        margin: 40px 40px;
+        animation: 0.5s d;
+        animation-iteration-count: 1;
+        width: auto;
+    }
+    .banner4:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .banner4 h1{
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 20px;
+        width: auto;
+    }
+    .banner4 p{
+        font-size: 20px;
+        padding: 15px;
+        width: auto;
+        text-align: justify;
+    }
+    footer{
+        padding: 10px 5px;
+        text-align: center;
+        font-size: 15px;
+        width:auto;
+        height: auto;
+    }
+}
